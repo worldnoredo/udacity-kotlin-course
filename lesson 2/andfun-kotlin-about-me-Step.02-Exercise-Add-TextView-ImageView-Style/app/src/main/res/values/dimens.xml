@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="name_text_PaddingTop">16dp</dimen>
+    <dimen name="name_text_MarginTop">8dp</dimen>
+    <dimen name="name_text_TextSize">20sp</dimen>
+</resources>

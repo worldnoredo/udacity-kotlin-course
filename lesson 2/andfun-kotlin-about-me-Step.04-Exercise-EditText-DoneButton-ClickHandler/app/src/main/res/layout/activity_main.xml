@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/padding"
+    android:paddingEnd="@dimen/padding">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAlignment="center"
+        style="@style/NameStyle" />
+
+    <!-- TODO (01) Create an EditText for entering a nickname -->
+
+    <!-- TODO (02) Create a button with the caption "Done" -->
+
+    <!-- TODO (03) Create a TextView to display the nickname -->
+
+    <EditText
+        android:id="@+id/edit_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edit_text_HintText"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/hide_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hide_text_Text"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/done_button_Text"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/star_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:contentDescription="@string/yellow_star"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"/>
+
+    </ScrollView>
+
+</LinearLayout>
